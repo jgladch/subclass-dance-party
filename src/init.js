@@ -20,5 +20,9 @@ $(document).ready(function() {
     $('.taco').animate({left: '-50px'}, 2000);
   });
 
+  $(document).keydown(function() {
+    $('.taco').animate({left: '100%'}, 2000);
+  });
+
 });
 
