@@ -16,8 +16,3 @@ ThrobbyDancer.prototype.step = function(timeBetweenSteps){
     this.bigger = true;
   }
 };
-
-
-var makeNewThrobbyDancer = function(top, left, timeBetweenSteps){
-  return new ThrobbyDancer(top, left, timeBetweenSteps);
-};

@@ -9,7 +9,3 @@ SlideDancer.prototype.step = function(timeBetweenSteps) {
   this.left += 10;
   this.setPosition(this.top, this.left);
 };
-
-var makeNewSlideDancer = function(top, left, timeBetweenSteps) {
-  return new SlideDancer(top, left, timeBetweenSteps);
-};
