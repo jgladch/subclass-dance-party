@@ -17,3 +17,10 @@ Dancer.prototype.setPosition = function(top, left){
   };
   this.$node.css(styleSettings);
 };
+
+Dancer.prototype.setColor = function(border){
+  var styleSettings = {
+    border: border
+  };
+  this.$node.css(styleSettings);
+};
