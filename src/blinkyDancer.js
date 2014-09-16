@@ -11,6 +11,5 @@ BlinkyDancer.prototype.step = function(timeBetweenSteps){
 };
 
 var makeNewBlinkyDancer = function(top, left, timeBetweenSteps){
-  debugger;
   return new BlinkyDancer(top, left, timeBetweenSteps);
 };
