@@ -17,11 +17,11 @@ $(document).ready(function() {
   });
 
   $(document).keyup(function() {
-    $('.taco').animate({left: '-50px'}, 2000);
+    $('.taco').animate({'left': '-50px'}, 2000);
   });
 
   $(document).keydown(function() {
-    $('.taco').animate({left: '100%'}, 2000);
+    $('.taco').animate({'left': '100%'}, 2000);
   });
 
 });
