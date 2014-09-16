@@ -3,7 +3,9 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url(assets/mezz.jpg);
+  background-size: cover;
+  font-family: Helvetica;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -26,7 +28,14 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .rolly{
-  background-image: url(http://www.dafk.net/what/rickroll.gif);
+  border: none !important;
+  background-image: url(assets/rolly.gif);
   height: 284px;
   width: 284px;
+}
+.taco{
+  border: none !important;
+  background-image: url(assets/taco.gif);
+  height: 133px;
+  width: 192px;
 }
