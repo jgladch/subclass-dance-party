@@ -1,11 +1,11 @@
-var RollyDancer = function(top, left, timeBetweenSteps){
+var RollyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('rolly');
 };
 
 RollyDancer.prototype = Object.create(Dancer.prototype);
 RollyDancer.prototype.constructor = RollyDancer;
-RollyDancer.prototype.step = function(timeBetweenSteps){
+RollyDancer.prototype.step = function(timeBetweenSteps) {
   Dancer.prototype.step.call(this, 4000);
   //approach the taco
   debugger;

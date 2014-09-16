@@ -6,11 +6,11 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.step(timeBetweenSteps);
 };
 
-Dancer.prototype.step = function(timeBetweenSteps){
+Dancer.prototype.step = function(timeBetweenSteps) {
   setTimeout(this.step.bind(this, timeBetweenSteps), timeBetweenSteps);
 };
 
-Dancer.prototype.setPosition = function(top, left){
+Dancer.prototype.setPosition = function(top, left) {
   this.top = top;
   this.left = left;
   var styleSettings = {
@@ -20,14 +20,14 @@ Dancer.prototype.setPosition = function(top, left){
   this.$node.css(styleSettings);
 };
 
-Dancer.prototype.setColor = function(border){
+Dancer.prototype.setColor = function(border) {
   var styleSettings = {
     border: border
   };
   this.$node.css(styleSettings);
 };
 
-Dancer.prototype.move = function(x, y, timeBetweenSteps){
+Dancer.prototype.move = function(x, y, timeBetweenSteps) {
   var duration = timeBetweenSteps || 200;
   this.top = this.top + y;
   this.left = this.left + x;
