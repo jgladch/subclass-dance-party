@@ -25,3 +25,8 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.rolly{
+  background-image: url(http://www.dafk.net/what/rickroll.gif);
+  height: 284px;
+  width: 284px;
+}

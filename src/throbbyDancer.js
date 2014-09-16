@@ -1,5 +1,6 @@
 var ThrobbyDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('throbby');
   this.bigger = true;
 };
 ThrobbyDancer.prototype = Object.create(Dancer.prototype);
