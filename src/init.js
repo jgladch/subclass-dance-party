@@ -68,15 +68,19 @@ $(document).ready(function() {
     for (var direction in keys) {
       if (!keys.hasOwnProperty(direction)) continue;
       if (direction == 37) {
+        window.taco.left -= 5;
         $('.taco').animate({left: '-=5'}, 0);
       }
       if (direction == 38) {
+        window.taco.top -= 5;
         $('.taco').animate({top: '-=5'}, 0);
       }
       if (direction == 39) {
+        window.taco.left += 5;
         $('.taco').animate({left: '+=5'}, 0);
       }
       if (direction == 40) {
+        window.taco.left += 5;
         $('.taco').animate({top: '+=5'}, 0);
       }
     }
